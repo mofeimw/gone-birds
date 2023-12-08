@@ -68,18 +68,15 @@ body {
 }
 
 .hero {
-    width: 50vw;
+    max-width: 60%;
     height: 30vh;
     display: block;
     margin: 0 auto;
     padding: 33px 44px;
-    border-radius: 13px;
     background-image: url("../assets/background-dark.png");
     background-size: cover;
-    background-position: bottom;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 60%;
+    background-position: 50% 50%;
     border-image-source: url('../assets/border.png');
     border-image-slice: 60;
     border-image-repeat: stretch;
