@@ -55,13 +55,13 @@ body {
 #silhouttes {
     position: fixed;
     left: 5%;
-    top: 18%;
+    top: 10%;
     opacity: 0.6;
     filter: blur(2.3px);
 }
 
 #logo {
-    width: 50vw;
+    height: 33vh;
     display: block;
     margin: 0 auto;
     margin-top: 4px;
@@ -69,6 +69,7 @@ body {
 
 .hero {
     width: 50vw;
+    height: 30vh;
     display: block;
     margin: 0 auto;
     padding: 33px 44px;
@@ -84,6 +85,7 @@ body {
     border-image-repeat: stretch;
     border-width: 6px;
     border-style: solid;
+    display: table;
 }
 
 .hero:hover {
@@ -99,12 +101,16 @@ body {
     margin-bottom: 13px;
     transition: all .2s ease-in-out;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+    display: table-cell;
+    vertical-align: middle;
+    font-style: italic;
+    opacity: 0.8;
 }
 
 .hero img {
     display: block;
     margin: 0 auto;
-    width: 25vw;
+    height: 23vh;
     transition: all .2s ease-in-out;
     position: absolute;
     bottom: 2%;
