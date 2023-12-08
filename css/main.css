@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Palatino";
+    src: url("../assets/palatino.ttf");
+}
+
+* {
+    transition: all .4s ease-in-out;
+}
+
+body {
+    background-color: #142E25;
+    color: #f2fcf8;
+    font-family: Palatino, Georgia, serif;
+    transition: all .4s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#top-left {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 150px;
+    opacity: 0.8;
+}
+
+#top-right {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 150px;
+    transform: rotate(90deg);
+    opacity: 0.8;
+}
+
+#bottom-right {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 150px;
+    transform: rotate(180deg);
+    opacity: 0.8;
+}
+
+#bottom-left {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 150px;
+    transform: rotate(270deg);
+    opacity: 0.8;
+}
+
+#silhouttes {
+    position: fixed;
+    left: 5%;
+    top: 18%;
+    opacity: 0.6;
+    filter: blur(2.3px);
+}
+
+#logo {
+    width: 50vw;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+
+.hero {
+    width: 50vw;
+    display: block;
+    margin: 0 auto;
+    padding: 33px 44px;
+    border-radius: 13px;
+    background-image: url("../assets/background-dark.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 60%;
+    border-image-source: url('../assets/border.png');
+    border-image-slice: 60;
+    border-image-repeat: stretch;
+    border-width: 6px;
+    border-style: solid;
+}
+
+.hero:hover {
+    cursor: pointer;
+    background-image: url("../assets/background.png");
+}
+
+.hero p {
+    font-size: 1.44em;
+    line-height: 1.5em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 13px;
+    transition: all .2s ease-in-out;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+
+.hero img {
+    display: block;
+    margin: 0 auto;
+    width: 25vw;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
+.hero img:hover {
+    transform: translate(-50%) scale(1.05);
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gone Birds</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <audio src=“assets/secret_garden.mp3” autoplay loop=“true”></audio>
+
+        <img src="assets/silhouttes.png" id="silhouttes">
+        <img src="assets/gone_birds.png" id="logo">
+
+        <img src="assets/corner.png" id="top-left">
+        <img src="assets/corner.png" id="top-right">
+        <img src="assets/corner.png" id="bottom-left">
+        <img src="assets/corner.png" id="bottom-right">
+
+        <div class="hero" id="frame">
+            <p id="frame-para">Embark on the journey of the Gone Birds, envisioned by J. Drew Lanham in "Forever Gone." Reimagined here by A.I., these birds are gone forever from the face of the Earth. Here's to remembering their legacy.</p>
+            <img src="assets/button.png" id="enter"/>
+        </div>
+
+        <script>
+            let audio = new Audio("assets/secret_garden.mp3")
+            let button = document.getElementById("enter")
+            let frame = document.getElementById("frame")
+            let content = frame.innerText
+            let playing = false
+
+            button.onclick = () => {
+                window.location = "garden.html"
+            }
+
+            frame.onclick = () => {
+                if (playing) {
+                    audio.pause()
+                    playing = false;
+                } else {
+                    audio.play()
+                    playing = true;
+                }
+            }
+
+            frame.onmouseenter = () => {
+                document.getElementById("frame-para").style.opacity = "0"
+            }
+            frame.onmouseleave = () => {
+                document.getElementById("frame-para").style.opacity = "1"
+            }
+        </script>
+    </body>
+</html>
