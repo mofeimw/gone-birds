@@ -135,10 +135,103 @@ body {
 
 #grid div {
     object-fit: contain;
+    border-image-source: url('../assets/border.png');
+    border-image-slice: 60;
+    border-image-repeat: stretch;
+    border-width: 6px;
+    border-style: solid;
+    text-align: center;
+}
+
+#grid div:hover {
+    filter: brightness(.8);
+}
+
+#grid div h2 {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+    opacity: 0;
+    color: #F5F5EB;
+    margin-top: 2%;
+}
+
+#grid div p {
+    text-align: left;
+    padding: 0 20px;
+    display: none;
 }
 
 #bird1 {
     background-image: url("../assets/birds/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird2 {
+    background-image: url("../assets/birds/2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird3 {
+    background-image: url("../assets/birds/3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird4 {
+    background-image: url("../assets/birds/4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird5 {
+    background-image: url("../assets/birds/5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird6 {
+    background-image: url("../assets/birds/6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird7 {
+    background-image: url("../assets/birds/7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird8 {
+    background-image: url("../assets/birds/8.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird9 {
+    background-image: url("../assets/birds/9.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird10 {
+    background-image: url("../assets/birds/10.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird11 {
+    background-image: url("../assets/birds/11.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird12 {
+    background-image: url("../assets/birds/12.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird13 {
+    background-image: url("../assets/birds/13.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird14 {
+    background-image: url("../assets/birds/14.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bird15 {
+    background-image: url("../assets/birds/15.png");
     background-size: cover;
     background-repeat: no-repeat;
 }

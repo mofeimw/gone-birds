@@ -8,24 +8,111 @@
     </head>
     <body>
         <main id="grid">
-            <div id="bird1"></div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>10</div>
-            <div>11</div>
-            <div>12</div>
-            <div>13</div>
-            <div>14</div>
-            <div>15</div>
+            <div id="bird1">
+                <p>The Carolina parakeet (Conuropsis carolinensis) was the only parrot species native to the eastern United States. Sadly, it became extinct in the early 20th century due to a combination of factors, including habitat loss, widespread hunting, and the introduction of diseases, like psittacosis.</p>
+                <h2>Carolina Parakeet</h2>
+            </div>
+
+            <div id="bird2">
+                <p>The Ivory-billed woodpecker (Campephilus principalis) was a large woodpecker species native to the southeastern United States and Cuba. Declared critically endangered and likely extinct, the last confirmed sighting was in the 1940s, primarily due to habitat loss and logging.</p>
+                <h2>Ivory-billed Woodpecker</h2>
+            </div>
+
+            <div id="bird3">
+                <p>Bachman's warbler (Vermivora bachmanii) was a small songbird native to the southeastern United States. Declared extinct, the last confirmed sighting was in the mid-20th century, and its disappearance is attributed to habitat destruction in its breeding and wintering grounds.</p>
+                <h2>Bachman’s Warbler</h2>
+            </div>
+
+            <div id="bird4">
+                <p>The Passenger pigeon (Ectopistes migratorius) was once one of the most abundant bird species in North America, forming massive flocks. Unfortunately, extensive hunting and habitat destruction led to its rapid decline, and the last known individual died in captivity in 1914, marking its extinction.</p>
+                <h2>Passenger Pigeon</h2>
+            </div>
+
+            <div id="bird5">
+                <p>The Heath hen (Tympanuchus cupido cupido) was a subspecies of the greater prairie chicken native to the eastern United States. It became extinct in 1932, primarily due to habitat loss, hunting, and diseases introduced by domestic poultry.</p>
+                <h2>Heath Hen</h2>
+            </div>
+
+            <div id="bird6">
+                <p>The Great Auk (Pinguinus impennis) was a large, flightless seabird that inhabited the North Atlantic. Hunted extensively for its down, meat, and feathers, the last known individuals were killed in 1844 on the Icelandic island of Eldey, leading to the species' extinction.</p>
+                <h2>Great Auk</h2>
+            </div>
+
+            <div id="bird7">
+                <p>The Labrador duck (Camptorhynchus labradorius) was a sea duck that once inhabited the eastern coast of North America. Declared extinct in the late 19th century, the reasons for its decline are unclear, but factors such as overhunting, habitat destruction, and changes in food availability likely played a role.</p>
+                <h2>Labrador Duck</h2>
+            </div>
+
+            <div id="bird8">
+                <p>The Dodo (Raphus cucullatus) was a flightless bird endemic to the island of Mauritius. Discovered by European sailors in the late 16th century, the Dodo became extinct by the mid-17th century due to human activities, including hunting, habitat destruction, and the introduction of invasive species.</p>
+                <h2>Dodo</h2>
+            </div>
+
+            <div id="bird9">
+                <p>The Mauritius Blue Pigeon (Alectroenas nitidissima) was a pigeon species native to Mauritius. It became extinct in the 1830s, likely due to habitat loss and hunting, compounded by the introduction of invasive species.</p>
+                <h2>Mauritius Blue Pigeon</h2>
+            </div>
+
+            <div id="bird10">
+                <p>The Dusky Seaside Sparrow (Ammospiza nigrescens) was a small bird species endemic to Florida's Atlantic coast. Declared extinct in the 1990s, its disappearance was primarily attributed to habitat loss caused by land development and the alteration of water flow in its marshy habitats.</p>
+                <h2>Dusky Seaside Sparrow</h2>
+            </div>
+
+            <div id="bird11">
+                <p>The Spectacled Cormorant (Phalacrocorax perspicillatus) was a large, flightless cormorant species native to the Kuril Islands and the Sea of Okhotsk. Extinct since the mid-19th century, reasons for its decline include overhunting by humans and introduced predators, contributing to its eventual extinction.</p>
+                <h2>Spectacled Cormorant</h2>
+            </div>
+
+            <div id="bird12">
+                <p>The Pink-headed Duck (Rhodonessa caryophyllacea) was a striking waterfowl species native to parts of India and Bangladesh. Declared extinct in the mid-20th century, the exact reasons for its disappearance are unclear, but habitat destruction and hunting are believed to have played significant roles.</p>
+                <h2>Pink-Headed Duck</h2>
+            </div>
+
+            <div id="bird13">
+                <p>The Mauke Starling (Aplonis mavornata) was a bird species endemic to the island of Mauke in the Cook Islands. Unfortunately, it is considered extinct, with the last confirmed sighting in the late 19th century. Habitat destruction and the introduction of invasive species likely contributed to its demise.</p>
+                <h2>Mauke Starling</h2>
+            </div>
+
+            <div id="bird14">
+                <p>Lyall's Wren (Traversia lyalli) was a small, flightless bird species endemic to New Zealand. Extinct since the late 19th century, habitat destruction and the introduction of predators, particularly rats, are believed to have been major factors in the decline and eventual extinction of this wren species.</p>
+                <h2>Lyall's Wren</h2>
+            </div>
+
+            <div id="bird15">
+                <p>The Laughing Owl (Sceloglaux albifacies) was a unique owl species native to New Zealand. Extinct since the early 20th century, habitat alteration, predation by introduced mammals, and overhunting contributed to its demise.</p>
+                <h2>Laughing Owl</h2>
+            </div>
         </main>
 
         <script>
+            cell_mousein = (e) => {
+                for (let i = 0; i < e.target.children.length; i++) {
+                    if (e.target.children[i].tagName === "H2") {
+                        e.target.children[i].style.opacity = "1";
+                    }
+                }
+            };
+            cell_mouseout = (e) => {
+                for (let i = 0; i < e.target.children.length; i++) {
+                    if (e.target.children[i].tagName === "H2") {
+                        e.target.children[i].style.opacity = "0";
+                    }
+                }
+            };
+            cell_mouseclick = (e) => {
+                for (let i = 0; i < e.target.children.length; i++) {
+                    if (e.target.children[i].tagName === "P") {
+                        alert(e.target.children[i].innerHTML);
+                    }
+                }
+            };
+
+            garden = document.getElementById("grid")
+            for (let i = 0; i < garden.children.length; i++) {
+                garden.children[i].addEventListener("mouseenter", cell_mousein);
+                garden.children[i].addEventListener("mouseleave", cell_mouseout);
+                garden.children[i].addEventListener("click", cell_mouseclick);
+            }
         </script>
     </body>
 </html>
