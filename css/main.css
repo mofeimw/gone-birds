@@ -121,3 +121,24 @@ body {
     transform: translate(-50%) scale(1.05);
     cursor: pointer;
 }
+
+/* garden */
+
+#grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 30px;
+    padding: 30px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#grid div {
+    object-fit: contain;
+}
+
+#bird1 {
+    background-image: url("../assets/birds/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
