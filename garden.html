@@ -7,6 +7,20 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+        <aside id="modal">
+            <h1 id="modal-title"></h1>
+            <img id="modal-bird"></img>
+            <p id="modal-p"></p>
+
+            <img src="assets/return-button.png" id="return"/>
+
+            <img src="assets/corner.png" id="top-left">
+            <img src="assets/corner.png" id="top-right">
+            <img src="assets/corner.png" id="bottom-left">
+            <img src="assets/corner.png" id="bottom-right">
+
+        </aside>
+
         <main id="grid">
             <div id="bird1">
                 <p>The Carolina parakeet (Conuropsis carolinensis) was the only parrot species native to the eastern United States. Sadly, it became extinct in the early 20th century due to a combination of factors, including habitat loss, widespread hunting, and the introduction of diseases, like psittacosis.</p>
@@ -85,6 +99,25 @@
         </main>
 
         <script>
+            modal = document.getElementById("modal");
+            modal_title = document.getElementById("modal-title");
+            modal_bird = document.getElementById("modal-bird");
+            modal_p = document.getElementById("modal-p");
+            return_button = document.getElementById("return");
+
+            window.history.pushState(null, null, window.location.href);
+            window.onpopstate = function onPopState() {
+                if (modal.classList.contains("active")) {
+                    modal.classList.remove("active");
+                } else {
+                    history.back();
+                }
+            };
+
+            return_button.onclick = () => {
+                modal.classList.remove("active");
+            }
+
             cell_mousein = (e) => {
                 for (let i = 0; i < e.target.children.length; i++) {
                     if (e.target.children[i].tagName === "H2") {
@@ -100,9 +133,17 @@
                 }
             };
             cell_mouseclick = (e) => {
+                modal.classList.add("active");
+                let styles = window.getComputedStyle(e.target);
+                let url = styles.backgroundImage.slice(5, -2);
+                modal_bird.src = url;
+
                 for (let i = 0; i < e.target.children.length; i++) {
                     if (e.target.children[i].tagName === "P") {
-                        alert(e.target.children[i].innerHTML);
+                        <!-- alert(e.target.children[i].innerHTML); -->
+                        modal_p.innerHTML = e.target.children[i].innerHTML;
+                    } else if (e.target.children[i].tagName === "H2") {
+                        modal_title.innerHTML = e.target.children[i].innerHTML;
                     }
                 }
             };

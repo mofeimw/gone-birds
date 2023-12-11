@@ -158,6 +158,7 @@ body {
     text-align: left;
     padding: 0 20px;
     display: none;
+    visibility: hidden;
 }
 
 #bird1 {
@@ -234,4 +235,71 @@ body {
     background-image: url("../assets/birds/15.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 101;
+    background-color: #142E25;
+    color: #f2fcf8;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+#modal-title {
+    font-size: 3rem;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+
+#modal.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+}
+
+#modal-bird {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-image-source: url('../assets/border.png');
+    border-image-slice: 60;
+    border-image-repeat: stretch;
+    border-width: 6px;
+    border-style: solid;
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 6vw;
+}
+
+#modal-p {
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+
+#return {
+    display: block;
+    margin: 0 auto;
+    height: 23vh;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
+#return:hover {
+    transform: translate(-50%) scale(1.05);
+    cursor: pointer;
 }
