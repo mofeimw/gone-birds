@@ -256,7 +256,7 @@ body {
 #modal-title {
     font-size: 3rem;
     position: absolute;
-    top: 6%;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
@@ -285,6 +285,10 @@ body {
 #modal-p {
     margin-left: 6vw;
     margin-right: 6vw;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+    margin-top: -6vh;
 }
 
 #return {
