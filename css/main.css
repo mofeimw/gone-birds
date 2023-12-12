@@ -118,7 +118,7 @@ body {
 }
 
 .hero img:hover {
-    transform: translate(-50%) scale(1.05);
+    transform: translate(-50%) scale(0.95);
     cursor: pointer;
 }
 
@@ -145,7 +145,7 @@ body {
 }
 
 #grid div:hover {
-    filter: brightness(.8);
+    filter: brightness(.77);
     cursor: pointer;
 }
 
@@ -155,7 +155,7 @@ body {
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
     opacity: 0;
     color: #F5F5EB;
-    filter: brightness(1.5);
+    filter: brightness(2);
     margin-top: 2%;
     position: absolute;
     bottom: 0;
@@ -311,6 +311,6 @@ body {
 }
 
 #return:hover {
-    transform: translate(-50%) scale(1.05);
+    transform: translate(-50%) scale(0.95);
     cursor: pointer;
 }
