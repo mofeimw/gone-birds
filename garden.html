@@ -129,6 +129,24 @@ The decline of the Laughing Owl can be attributed to several factors, including 
         </main>
 
         <script>
+            function checkload_mobile() {
+                width = window.innerWidth;
+                grid = document.getElementById("grid");
+                if (width <= 756) {
+                    grid.style.gridTemplateColumns = "auto";
+                    for (let i = 0; i < grid.children.length; i++) {
+                        grid.children[i].style.height = "66vw";
+                    }
+                } else {
+                    grid.style.gridTemplateColumns = "auto auto auto auto auto";
+                    for (let i = 0; i < grid.children.length; i++) {
+                        grid.children[i].style.height = "";
+                    }
+                }
+            }
+            checkload_mobile();
+            window.onresize = checkload_mobile;
+
             modal = document.getElementById("modal");
             modal_title = document.getElementById("modal-title");
             modal_bird = document.getElementById("modal-bird");

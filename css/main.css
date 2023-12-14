@@ -61,7 +61,7 @@ body {
 }
 
 #logo {
-    height: 33vh;
+    height: 17em;
     display: block;
     margin: 0 auto;
     margin-top: 4px;
@@ -108,7 +108,7 @@ body {
 .hero img {
     display: block;
     margin: 0 auto;
-    height: 23vh;
+    height: 12em;
     transition: all .2s ease-in-out;
     position: absolute;
     bottom: 2%;
